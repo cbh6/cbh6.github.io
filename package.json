@@ -1,17 +1,37 @@
 {
-  "name": "cbh-react-portfolio",
-  "version": "0.1.0",
-  "private": true,
-  "dependencies": {
-    "react": "^16.4.1",
-    "react-dom": "^16.4.1",
-    "react-scripts": "1.1.4",
-    "styled-components": "^3.3.3"
-  },
-  "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
-  }
+    "name": "cbh-react-portfolio",
+    "version": "0.1.0",
+    "private": true,
+    "dependencies": {
+        "graphql": "^0.13.2",
+        "graphql-tag": "^2.9.2",
+        "react": "^16.4.1",
+        "react-apollo": "^2.1.9",
+        "react-dom": "^16.4.1",
+        "react-scripts": "1.1.4",
+        "react-styled-flexboxgrid": "^2.4.0",
+        "remcalc": "^1.0.10",
+        "styled-components": "^3.3.3",
+        "styled-flex-component": "^2.2.2"
+    },
+    "devDependencies": {
+        "babel-cli": "^6.26.0",
+        "babel-preset-react": "^6.24.1",
+        "eslint": "4.1.1",
+        "eslint-config-standard": "11.0.0-beta.0",
+        "eslint-plugin-flowtype": "2.34.1",
+        "eslint-plugin-import": "2.6.0",
+        "eslint-plugin-jsx-a11y": "5.1.1",
+        "eslint-plugin-node": "6.0.1",
+        "eslint-plugin-promise": "3.7.0",
+        "eslint-plugin-react": "7.1.0",
+        "eslint-plugin-standard": "3.1.0",
+        "prettier": "1.12.1"
+    },
+    "scripts": {
+        "start": "react-scripts start",
+        "build": "react-scripts build",
+        "test": "react-scripts test --env=jsdom",
+        "eject": "react-scripts eject"
+    }
 }
