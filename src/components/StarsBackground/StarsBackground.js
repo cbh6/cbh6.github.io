@@ -5,6 +5,7 @@ import './style.css'
 const ParallaxBackground = () => {
   return (
     <div>
+      <div className="b" />
       <div className="stars" />
       <div className="twinkling" />
       <div className="gradient" />
