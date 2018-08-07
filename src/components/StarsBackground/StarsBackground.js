@@ -5,12 +5,14 @@ import './style.css'
 const ParallaxBackground = () => {
   return (
     <div>
-      <div className="b" />
       <div className="stars" />
       <div className="twinkling" />
       <div className="gradient" />
-      {/* <div className="gradient2" /> */}
-      {/* <div className="clouds" /> */}
+      <div id="comets">
+        <i></i>
+        <i></i>
+        <i></i>
+      </div>
     </div>
   )
 }
