@@ -7,7 +7,7 @@ const ParallaxBackground = () => {
     <div>
       <div className="stars" />
       <div className="twinkling" />
-      <div className="gradient" />
+      <div className="background" />
       <div id="comets">
         <i></i>
         <i></i>
