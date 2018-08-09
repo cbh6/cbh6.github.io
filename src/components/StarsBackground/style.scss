@@ -7,9 +7,10 @@
    -------------------------------- */
 
 .stars,
+.comets,
 .twinkling,
 .background {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   right: 0;
@@ -17,6 +18,7 @@
   width: 100%;
   height: 100%;
   display: block;
+  z-index: -1;
 }
 
 .background {
@@ -79,17 +81,17 @@
 
 /* comets animations */
 
-#comets {
-  position: relative;
-  top: -150px;
-  width: 100vw;
-  text-align: left;
-  height: 100%;
-  min-height: 900px;
-  overflow: hidden;
-}
+// .comets {
+//   position: absolute;
+//   top: -150px;
+//   width: 100vw;
+//   text-align: left;
+//   height: 100%;
+//   min-height: 900px;
+//   overflow: hidden;
+// }
 
-#comets i {
+.comets i {
   display: inline-block;
   width: 250px;
   height: 150px;
@@ -113,13 +115,13 @@
   animation-timing-function: ease-in;
 }
 
-#comets i:nth-child(1) {
+.comets i:nth-child(1) {
   left: 50vw;
   height: 73px;
   width: 3px;
   background-color: #fff;
 }
-#comets i:nth-child(3) {
+.comets i:nth-child(3) {
   height: 11px;
   width: 3px;
   left: 10vw;
@@ -130,7 +132,7 @@
   -o-animation: falling3 8s 3s infinite;
   animation: falling3 8s 3s infinite;
 }
-#comets i:nth-child(2) {
+.comets i:nth-child(2) {
   left: 30vw;
   height: 70px;
   width: 4px;

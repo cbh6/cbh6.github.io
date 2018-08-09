@@ -1,9 +1,14 @@
 import React, { Component } from 'react'
-// import ParallaxBackground from './components/ParallaxBackground'
 import StarsBackground from './components/StarsBackground'
+import LandingPage from './pages/LandingPage'
 class App extends Component {
   render() {
-    return <StarsBackground />
+    return (
+      <div>
+        <StarsBackground />
+        <LandingPage />
+      </div>
+    )
   }
 }
 

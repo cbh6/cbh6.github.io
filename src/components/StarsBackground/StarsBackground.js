@@ -8,10 +8,10 @@ const ParallaxBackground = () => {
       <div className="stars" />
       <div className="twinkling" />
       <div className="background" />
-      <div id="comets">
-        <i></i>
-        <i></i>
-        <i></i>
+      <div className="comets">
+        <i />
+        <i />
+        <i />
       </div>
     </div>
   )
