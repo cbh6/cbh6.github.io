@@ -3,11 +3,7 @@
   padding: 0;
 }
 
-/* STARS --------------------------
-   -------------------------------- */
-
 .stars,
-.comets,
 .twinkling,
 .background {
   position: fixed;
@@ -20,6 +16,9 @@
   display: block;
   z-index: -1;
 }
+
+/* STARS --------------------------
+   -------------------------------- */
 
 .background {
   background: #13325881;
@@ -79,18 +78,16 @@
 /* COMETS -------------------------
    -------------------------------- */
 
-/* comets animations */
-
-// .comets {
-//   position: absolute;
-//   top: -150px;
-//   width: 100vw;
-//   text-align: left;
-//   height: 100%;
-//   min-height: 900px;
-//   overflow: hidden;
-// }
-
+.comets {
+  position: fixed;
+  top: -150px;
+  text-align: left;
+  width: 100%;
+  height: 100%;
+  min-height: 900px;
+  display: block;
+  overflow: hidden;
+}
 .comets i {
   display: inline-block;
   width: 250px;
