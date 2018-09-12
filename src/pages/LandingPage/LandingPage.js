@@ -7,8 +7,8 @@ const LandingPage = () => {
     <div className="landing-page">
       <main>
         <div className="intro-wrapper">
-          <div className="intro-name">Hello, I´m Cristian!</div>
-          <div className="tagline">Web developer</div>
+          <div className="intro-name">Hi, I`m Cristian Botella</div>
+          <div className="tagline">A software web developer</div>
           <SocialLinks />
         </div>
       </main>

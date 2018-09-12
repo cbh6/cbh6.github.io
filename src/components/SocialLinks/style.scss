@@ -10,6 +10,7 @@
 
   a {
     padding: 0 0.625rem;
+    color: lightcyan;
   }
 
   &.animate-icons {
@@ -31,16 +32,16 @@
 
   @keyframes icon-wobble {
     25% {
-      transform: translateY(-8px);
+      transform: translateX(-8px);
     }
     50% {
-      transform: translateY(0px);
+      transform: translateX(0px);
     }
     75% {
-      transform: translateY(-4px);
+      transform: translateX(-4px);
     }
     100% {
-      transform: translateY(0px);
+      transform: translateX(0px);
     }
   }
 }

@@ -1,4 +1,7 @@
 import React from 'react'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+// import { faGithub } from '@fortawesome/free-solid-svg-icons'
+import { faGithub, faTwitter, faMedium, faLinkedin } from '@fortawesome/free-brands-svg-icons'
 import './style.css'
 
 const SocialLinks = () => {
@@ -9,28 +12,28 @@ const SocialLinks = () => {
         rel="noopener noreferrer"
         href="https://github.com/cbh6"
       >
-        <i className="fab fa-github" />
+        <FontAwesomeIcon className="social-icons animate-icons" icon={faGithub} />
       </a>
       <a
         target="_blank"
         rel="noopener noreferrer"
         href="https://twitter.com/cribh6"
       >
-        <i className="fab fa-twitter" />
+        <FontAwesomeIcon className="social-icons animate-icons" icon={faTwitter} />
       </a>
       <a
         target="_blank"
         rel="noopener noreferrer"
         href="https://www.linkedin.com/in/cristian-botella-hurtado-5aba55140/"
       >
-        <i className="fab fa-linkedin" />
+        <FontAwesomeIcon className="social-icons animate-icons" icon={faLinkedin} />
       </a>
       <a
         target="_blank"
         rel="noopener noreferrer"
         href="https://medium.com/@cri.bh6"
       >
-        <i className="fab fa-medium" />
+        <FontAwesomeIcon className="social-icons animate-icons" icon={faMedium} />
       </a>
     </div>
   )
