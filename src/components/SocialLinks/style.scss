@@ -2,7 +2,7 @@
 
 .social-icons {
   padding: 0.25rem 0;
-  font-size: 3rem;
+  font-size: 3.5rem;
 
   @include breakpoint-small-down {
     font-size: 2.5rem;
@@ -17,15 +17,16 @@
     a {
       display: inline-block;
       transform: perspective(1px) translateZ(0);
-      box-shadow: 0 0 1px transparent;
-
+      
       &:hover,
       &:focus,
       &:active {
-        animation-name: icon-wobble;
-        animation-duration: 0.75s;
-        animation-timing-function: ease-in-out;
-        animation-iteration-count: 1;
+        svg {
+          box-shadow: 0 0 1px transparent;
+          color: #3a7999;
+          transition: ease 1s;
+
+        }
       }
     }
   }
