@@ -1,7 +1,10 @@
 @import 'breakpoints';
+@import 'colors';
 
 html {
   font-size: 12px;
+  font-family: 'Poor Story', cursive;
+  color: $text_color;
 
   @include breakpoint-small-up {
     font-size: 14px;
@@ -30,7 +33,6 @@ h6,
 p,
 ol,
 ul {
-  font-family: 'Roboto', sans-serif;
   font-weight: 300;
 }
 
@@ -61,4 +63,5 @@ h1 {
 
 a {
   text-decoration: none;
+  color: $text_color;
 }

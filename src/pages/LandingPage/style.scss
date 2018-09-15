@@ -25,28 +25,22 @@
       display: flex;
       flex-direction: column;
       justify-content: center;
-      text-align: center;
-      background: -webkit-linear-gradient(white, #38495a);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      font-family: 'Poor Story', cursive;
 
       > .intro-name {
-        width: 18ch;
-        font-size: 4rem;
+        font-size: 4.5rem;
         font-weight: bold;
         line-height: 4rem;
         padding-bottom: 1rem;
-        
-        overflow: hidden; /* Ensures the content is not revealed until the animation */
-        border-right: .1em solid; /* The typwriter cursor */
-        white-space: nowrap; /* Keeps the content on a single line */
-        margin: 0 auto; /* Gives that scrolling effect as the typing happens */
-        animation: typing 2.5s steps(40, end),
-          blink-caret 0.75s step-end infinite;
+
+        // overflow: hidden; /* Ensures the content is not revealed until the animation */
+        // border-right: .1em solid; /* The typwriter cursor */
+        // white-space: nowrap; /* Keeps the content on a single line */
+        // margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+        // animation: typing 2.5s steps(40, end),
+        //   blink-caret 0.75s step-end infinite;
 
         @include breakpoint-small-down {
-          font-size: 2.5rem;
+          font-size: 3rem;
           line-height: 3.5rem;
         }
       }
@@ -57,30 +51,30 @@
         font-weight: 300;
 
         @include breakpoint-small-down {
-          font-size: 1.25rem;
+          line-height: 2.5rem;
         }
       }
     }
   }
 
-  /* The typing effect */
-  @keyframes typing {
-    from {
-      width: 0;
-    }
-    to {
-      width: 18ch;
-    }
-  }
+  // /* The typing effect */
+  // @keyframes typing {
+  //   from {
+  //     width: 0;
+  //   }
+  //   to {
+  //     width: 18ch;
+  //   }
+  // }
 
-  /* The typewriter cursor effect */
-  @keyframes blink-caret {
-    from,
-    to {
-      border-color: transparent;
-    }
-    50% {
-      border-color: #3a7999;
-    }
-  }
+  // /* The typewriter cursor effect */
+  // @keyframes blink-caret {
+  //   from,
+  //   to {
+  //     border-color: transparent;
+  //   }
+  //   50% {
+  //     border-color: #3a7999;
+  //   }
+  // }
 }
