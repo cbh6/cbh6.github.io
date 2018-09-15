@@ -1,6 +1,6 @@
 @import '../../styles/breakpoints';
 
-.portfolio-page {
+.publications-page {
   padding-top: 2rem;
   min-height: 100vh;
   display: flex;
@@ -15,13 +15,14 @@
   h1 {
     padding: 1rem 0;
     font-size: 3rem;
+    text-align: center;
   }
 
   .content-grid {
     flex: auto;
   }
 
-  .portfolio-wrapper {
+  .publications-wrapper {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;

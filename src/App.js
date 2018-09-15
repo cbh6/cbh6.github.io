@@ -1,14 +1,14 @@
 import React, { Component } from 'react'
 import StarsBackground from './components/StarsBackground'
 import LandingPage from './pages/LandingPage'
-import PostsPage from './pages/PostsPage'
+import PublicationsPage from './pages/PublicationsPage'
 class App extends Component {
   render() {
     return (
       <div>
         <StarsBackground />
         <LandingPage />
-        <PostsPage />
+        <PublicationsPage />
       </div>
     )
   }
