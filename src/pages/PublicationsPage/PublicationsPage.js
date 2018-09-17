@@ -31,13 +31,14 @@ class PublicationsPage extends Component {
                 <div key={i} className="publication-item">
                   <div className="publication-item__title">{item.title}</div>
                   <img
+                    className="publication-item__img"
                     src={
                       item['content:encoded']
                         .split(' ')
                         .find(element => element.includes('src='))
                         .split('"')[1]
                     }
-                    alt=""
+                    alt="Publication covers"
                   />
                   <div className="publication-item__desc">
                     {item.categories}
