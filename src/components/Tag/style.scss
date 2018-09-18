@@ -1,0 +1,19 @@
+@import '../../styles/breakpoints';
+@import '../../styles/colors';
+
+.tag {
+  display: inline;
+  position: relative;
+  border: 1px dashed $blue_galaxy_dark;
+  border-radius: 5px;
+  padding: 0 0.5rem;
+  font-size: 0.9rem;
+  margin: 1rem 0.1rem;
+  line-height: 1.25rem;
+  color: $blue_galaxy_dark;
+  // background-color: $blue_galaxy_dark;
+
+  @include breakpoint-small-down {
+    font-size: 0.875rem;
+  }
+}
