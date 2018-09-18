@@ -1,3 +1,5 @@
+@import '../../styles/colors';
+
 * {
   margin: 0;
   padding: 0;
@@ -22,27 +24,27 @@
 
 .background {
   // background: #13325881;
-  background-image: linear-gradient(to right, #1b1e2a66 , #16316099);
+  background-image: linear-gradient(
+    to right,
+    #1b1e2a66,
+    $blue_galaxy_dark_transparent
+  );
 }
-
 .stars {
   background: #000
     url(http://www.script-tutorials.com/demos/360/images/stars.png) repeat top
     center;
 }
-
 .twinkling {
   background: transparent
     url(http://www.script-tutorials.com/demos/360/images/twinkling.png) repeat
     top center;
-
   -moz-animation: move-twink-back 400s linear infinite;
   -ms-animation: move-twink-back 400s linear infinite;
   -o-animation: move-twink-back 400s linear infinite;
   -webkit-animation: move-twink-back 400s linear infinite;
   animation: move-twink-back 400s linear infinite;
 }
-
 @keyframes move-twink-back {
   from {
     background-position: 0 0;
@@ -75,10 +77,8 @@
     background-position: -10000px 5000px;
   }
 }
-
 /* COMETS -------------------------
    -------------------------------- */
-
 .comets {
   position: fixed;
   top: -150px;
@@ -106,14 +106,12 @@
   -ms-animation: falling 10s 0s infinite;
   -o-animation: falling 10s 0s infinite;
   animation: falling 10s 0s infinite;
-
   -webkit-animation-timing-function: ease-in;
   -moz-animation-timing-function: ease-in;
   -o-animation-timing-function: ease-in;
   -ms-animation-timing-function: ease-in;
   animation-timing-function: ease-in;
 }
-
 .comets i:nth-child(1) {
   left: 50vw;
   height: 73px;
@@ -142,12 +140,10 @@
   -o-animation: falling2 6s 1s infinite;
   animation: falling2 6s 1s infinite;
 }
-
 @keyframes falling {
   0% {
     -webkit-transform: translate3d(100px, 0px, 0px) rotate(160deg);
   }
-
   3% {
     -webkit-transform: translate3d(450px, 900px, 0) rotate(160deg);
     opacity: 0;
@@ -157,33 +153,27 @@
     opacity: 0;
   }
 }
-
 @keyframes falling2 {
   0% {
     -webkit-transform: translate3d(100px, 0, 0) rotate(130deg);
   }
-
   15% {
     -webkit-transform: translate3d(800px, 580px, 0) rotate(130deg);
     opacity: 0;
   }
-
   100% {
     -webkit-transform: translate3d(800px, 680px, 0) rotate(180deg);
     opacity: 0;
   }
 }
-
 @keyframes falling3 {
   0% {
     -webkit-transform: translate3d(0, 0, 0) rotate(150deg);
   }
-
   10% {
     -webkit-transform: translate3d(430px, 640px, 0) rotate(150deg);
     opacity: 0;
   }
-
   100% {
     -webkit-transform: translate3d(430px, 640px, 0) rotate(150deg);
     opacity: 0;

@@ -1,5 +1,8 @@
 import React, { Component } from 'react'
+import { Grid, Row, Col } from 'react-flexbox-grid'
 import RSSParser from 'rss-parser'
+import SectionHeader from '../../components/SectionHeader/SectionHeader'
+import Tag from '../../components/Tag/Tag'
 import './style.css'
 
 class PublicationsPage extends Component {
@@ -22,14 +25,18 @@ class PublicationsPage extends Component {
 
   render() {
     return (
-      <div className="publications-page">
-        <div className="content-grid">
-          <h1>Publications</h1>
-          <div className="publications-wrapper">
-            {this.state.publications.map((item, i) => {
+      <Grid fluid className="content-grid">
+        <Row center="xs">
+          <SectionHeader>Publications</SectionHeader>
+        </Row>
+        <Row center="xs" xs={6} lg={6}>
+          {!this.state.publications.length ? (
+            <p>Loading publications ...</p>
+          ) : (
+            this.state.publications.map((item, i) => {
               return (
-                <div key={i} className="publication-item">
-                  <div className="publication-item__title">{item.title}</div>
+                <Col key={i} className="publication-item">
+                  <h2 className="publication-item__title">{item.title}</h2>
                   <img
                     className="publication-item__img"
                     src={
@@ -40,15 +47,19 @@ class PublicationsPage extends Component {
                     }
                     alt="Publication covers"
                   />
-                  <div className="publication-item__desc">
-                    {item.categories}
-                  </div>
-                </div>
+                  <Row center="xs">
+                    {item.categories.map((category, index) => (
+                      <Col key={index} className="publication-item__tag">
+                        <Tag text={category} />
+                      </Col>
+                    ))}
+                  </Row>
+                </Col>
               )
-            })}
-          </div>
-        </div>
-      </div>
+            })
+          )}
+        </Row>
+      </Grid>
     )
   }
 }
