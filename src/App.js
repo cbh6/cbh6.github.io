@@ -8,7 +8,7 @@ class App extends Component {
       <div>
         <StarsBackground />
         <LandingPage />
-        <PublicationsPage />
+        {/* <PublicationsPage /> */}
       </div>
     )
   }
