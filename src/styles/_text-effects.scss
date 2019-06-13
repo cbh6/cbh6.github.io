@@ -1,0 +1,8 @@
+@import 'colors.scss';
+
+.highlight {
+  border-radius: 5px;
+  border: 1px dashed $light_cyan;
+  color: $light_cyan;
+  padding: 5px;
+}
